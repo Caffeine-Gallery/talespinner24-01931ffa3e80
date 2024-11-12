@@ -1,0 +1,11 @@
+service : {
+  addSegment: (text) -> (bool);
+  getStory: () ->
+   (record {
+      isActive: bool;
+      remainingTime: int;
+      segments: vec text;
+    }) query;
+  resetStory: () -> ();
+  startStory: (text) -> (bool);
+}
